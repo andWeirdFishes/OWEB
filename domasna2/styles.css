@@ -43,6 +43,12 @@ strong {
     background-color: rgba(255, 200, 200, 0.7);
     border-radius: 1em;
     display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#pizza-info:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 200, 200, 0.4);
 }
 
 #personal-info {
@@ -50,6 +56,12 @@ strong {
     background-color: rgba(200, 205, 250, 0.7);
     border-radius: 1em;
     display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#personal-info:hover {
+    transform: scale(1.1);
+    background-color: rgba(200, 205, 250, 0.4);
 }
 
 #button {
