@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza &lt;place&gt;</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="sredina">
+        <div class="kutija" id="pizza-info">
+            <h1>Order pizza!</h1>
+            <form method="post">
+                <h3>Create your perfect pizza.</h3>
+                <p><strong>Select the size:</strong><br>
+                    <label><input name="r1" type="radio">Small (diameter = 25cm)</label><br>
+                    <label><input name="r1" type="radio">Medium (diameter = 30cm)</label><br>
+                    <label><input name="r1" type="radio">Large (diameter = 35cm)</label>
+                </p>
+                <p><strong>Select the crust type:</strong><br>
+                    <select name="korki" id="korki">
+                        <option value="thinnest">Thinnest layer of the Earth</option>
+                        <option value="sredno">Normal</option>
+                        <option value="makedonsko">Thick</option>
+                        <option value="Chicago Deep Dish" selected>Deep Dish</option>
+                        <option value="kaskaval">Easy Breezy Cheesy</option>
+                    </select>
+                </p>
+                <p><strong>Select the toppings:</strong><br>
+                    <label><input name="chk" type="checkbox">Pepperoni</label>
+                    <label><input name="chk" type="checkbox">Prosciutto</label>
+                    <label><input name="chk" type="checkbox">Salami</label><br>
+                    <label><input name="chk" type="checkbox">Olives</label>
+                    <label><input name="chk" type="checkbox">Mushrooms</label>
+                    <label><input name="chk" type="checkbox">Тартуфи</label>
+                </p>
+        </div>
+        <div class="kutija" id="personal-info">
+            <h1>Personal information:</h1>
+            <h3>Enter your information.</h3>
+            <p>
+                <label>Name: <input type="text"></label>
+            </p>
+            <p>
+                <label>Address: <input type="text"></label>
+            </p>
+            <p><label>Phone: <input type="text" maxlength="11"></label></p>
+            <p><textarea style="font-family:Arial, Helvetica, sans-serif" rows="4" cols="50"
+                    placeholder="Message..."></textarea></p>
+            <p><input id="button" type="submit" value="Order">&emsp13; <input id="button" type="reset" value="Delete">
+            </p>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
