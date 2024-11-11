@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>MEAN GREEN MYSTERY MACHINES</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg meni">
+        <a class="navbar-brand dropdownmeni levo" href="home.html"><img src="assets/logos/logoc.png" width="5%"> Mean
+            Green Mystery
+            Machines</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse dropdownmeni" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="homeDropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                        <a class="dropdown-item" href="home.html#history">History</a>
+                        <a class="dropdown-item" href="home.html#location">Location</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="new.html" id="carsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cars
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="carsDropdown">
+                        <a class="dropdown-item" href="new.html">New</a>
+                        <a class="dropdown-item" href="used.html">Used</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#location">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ratings.html">Rating</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="myContainer">
+            <div class="pravoagolnice">
+                <div class="vnatre">
+                    <div class="naslov">
+                        <h1 class="display-5 text-center">MEAN GREEN<br>MYSTERY MACHINES</h1>
+                    </div>
+                    <div class="naslov">
+                        <div class="imgWrapper"><img class="logoNaslov" src="assets/logos/logoc.png" alt="logocirc.png">
+                        </div>
+                    </div>
+                    <div class="naslov">
+                        <h2 class="lead text-center fst-italic">MEAN&GREEN SINCE 1981!</h2>
+                    </div>
+                    <div class="naslov">
+                        <h1 class="lead text-center"><a href="new.html" class="link-success">View our cars...</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="history" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-5 text-center naslov">Our History</h1>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content naslov">
+                        <p class="lead">
+                            The story of Mean Green Mystery Machines begins in the early 1980s, when a small garage in
+                            the heart
+                            of the city of Las Veles was home to two best friends, Mile and Gjore, who shared an
+                            obsession with
+                            rare, vintage cars. They were passionate about restoring old vehicles and giving them a
+                            fresh life,
+                            but what set them apart was their ability to uncover the most mysterious and unique
+                            cars—vehicles with stories
+                            that no one else could unravel.
+                        </p>
+                        <p class="lead">
+                            Word spread quickly about the duo's ability to find and bring back to life cars thought to
+                            be lost
+                            forever. Soon, their tiny garage was transformed into a well-known shop, attracting car
+                            enthusiasts
+                            from all over. They quickly became known as the "Mean Green Mystery Machines," a name
+                            inspired by
+                            their signature lime-green psychedelic logo and their knack for discovering rare, quirky
+                            cars that
+                            had been hidden away for decades.
+                        </p>
+                        <p class="lead">
+                            Over the years, Mean Green Mystery Machines grew, expanding their inventory and their
+                            reputation.
+                            Today, they continue to honor their roots by focusing on both new and classic cars, ensuring
+                            that
+                            every vehicle they offer has a story to tell. The garage may have turned into a full-scale
+                            dealership, but Mile and Gjore's passion for uncovering rare gems and reviving the past is
+                            as strong
+                            as ever.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div id="ownerImages" class="d-flex justify-content-center align-items-center"
+                        style="height: 100%;">
+
+                        <img id="ownerImage" src="./assets/owners/zaedno.jpg" alt="Mile and Gjore"
+                            class="img-fluid rounded" style="max-width: 100%; max-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+    <br><br>
+    <section id="location" class="container-fluid py-5">
+        <div class="naslov lc">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="mb-4">Our Location</h2>
+                    <p>Visit us at:</p>
+                    <p><strong>Ul. JHK Djinot</strong><br>Las Veles, Macedonia</p>
+                    <p><strong>Phone:</strong> (389) 7X-ABC-DEF</p>
+                    <p><strong>Email:</strong> contact@mgmm.com</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="mapWrap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0437362314274!2d21.783814475750596!3d41.71957507125962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13542bb63015d3a1%3A0x63c64130a059b27b!2z0JLQtdC70LXRgQ!5e0!3m2!1smk!2smk!4v1731167164562!5m2!1smk!2smk"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

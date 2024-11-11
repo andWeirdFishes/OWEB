@@ -1,0 +1,165 @@
+body {
+    background: url('../assets/bgs/bgHome.png') repeat center center/cover fixed;
+    margin: 0;
+}
+
+.myContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.naslov {
+    color: #ffffff;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.meni {
+    background-color: #000000;
+}
+
+.dropdownmeni {
+    color: #ffffff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+}
+
+.nav-item.dropdown .dropdown-toggle:focus {
+    outline: none;
+}
+
+.levo {
+    margin-left: 5%
+}
+
+.nav-link:hover {
+    color: #00ff00;
+}
+
+.logoNaslov {
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logoNaslov:hover {
+    transform: scale(1.1);
+}
+
+.lc {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mapWrap {
+    background-color: #00ff00;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+}
+
+#navbarNav {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#history {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#location {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hc {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.pravoagolnice {
+    width: 50%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    border-radius: 2vh;
+    display: flex;
+}
+
+.vnatre {
+    padding: 25px;
+}
+
+.logoNaslov {
+    width: 50%;
+}
+
+#new {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dole {
+    padding-bottom: 3px;
+}
+
+.dolep {
+    padding-bottom: 15px;
+}
+
+#used {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.page-link:hover {
+    background-color: #00ff00;
+    border-color: #00ff00;
+}
+
+.parentImage {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.car-image {
+    max-width: 60%;
+    height: 60%;
+}
+
+.reaction-btn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment-box {
+    margin-bottom: 20px;
+}
+
+/* Remove extra padding from form */
+.card-body form {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card-body {
+    padding-bottom: 1rem;
+}

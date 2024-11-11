@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean Green Mystery Machines</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="ratings.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg meni">
+        <a class="navbar-brand levo" href="home.html">
+            <img src="assets/logos/logoc.png" width="5%"> Mean Green Mystery Machines
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="homeDropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                        <a class="dropdown-item" href="home.html#history">History</a>
+                        <a class="dropdown-item" href="home.html#location">Location</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="new.html" id="carsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cars
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="carsDropdown">
+                        <a class="dropdown-item" href="new.html">New</a>
+                        <a class="dropdown-item" href="used.html">Used</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#location">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ratings.html">Rating</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 black-box">
+                <p>Thank you for doing this survey!</p>
+            </div>
+            <div class="col-md-6 black-box">
+                <h2>Add a Review</h2>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Name:</label>
+                        <input type="text" class="form-control" id="review-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="review-lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-rating">Rating:</label>
+                        <div id="star-rating">
+                            <img src="assets/logos/st0.png" id="star1" data-value="1">
+                            <img src="assets/logos/st0.png" id="star2" data-value="2">
+                            <img src="assets/logos/st0.png" id="star3" data-value="3">
+                            <img src="assets/logos/st0.png" id="star4" data-value="4">
+                            <img src="assets/logos/st0.png" id="star5" data-value="5">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p>Average Rating: <span id="average-rating">-</span>/5</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
