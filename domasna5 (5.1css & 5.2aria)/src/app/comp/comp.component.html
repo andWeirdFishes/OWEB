@@ -1,0 +1,22 @@
+<div 
+    *ngIf="drv?.name != undefined" [ngClass]="klasi()" [ngStyle]="stls()"
+    role="region" 
+    [attr.aria-labelledby]="'driver-name'+ in" 
+    [attr.aria-describedby]="'driver-db-torka'+in">
+        <div aria-level="2" role="heading">
+            {{in?.toString()}}<br>{{drv?.name}}
+        </div>
+    <div [id]="'driver-db-torka'+in">
+        <img role="img" width="300"
+            *ngIf="drv?.iconUrl" [src]="drv?.iconUrl" [alt]="'Slika od '+drv?.name">
+        <div>{{drv?.team}}</div>
+        <div [ngSwitch]="drv?.category">
+            <div *ngSwitchCase = "'EXPERT'">EXPERT</div>
+            <div *ngSwitchCase = "'LUNATIC'">5arda</div>
+            <div *ngSwitchCase = "'ASD'">yippie</div>
+            <div *ngSwitchDefault>ups no comment</div>
+        </div>
+    </div>
+        <button role="button" aria-label="Otvori slika od vozac" (click)="onDrvView()">KLIKNI ME</button>
+    <div>&nbsp;</div>
+</div>

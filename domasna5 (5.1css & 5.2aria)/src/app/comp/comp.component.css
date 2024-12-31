@@ -1,0 +1,12 @@
+.begin{
+    background-image: linear-gradient(to right, cyan, pink);
+    text-decoration: overline;
+}
+.adv{
+    background-color: darkcyan;
+}
+img {
+    border-radius: 5px;
+    box-shadow: 15px;
+    border-width: 5px;
+}

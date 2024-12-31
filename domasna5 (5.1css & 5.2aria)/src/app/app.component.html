@@ -1,0 +1,17 @@
+<div
+role="list" 
+aria-label="Torkite od vozaci">
+    <app-comp
+        *ngFor="let drvr of d; index as i; first as f; last as l; odd as o; even as e"
+        [in]="i + 1"
+        [drv]="drvr"
+        [class.is-first]="f"
+        [class.is-last]="l"
+        [class.is-even]="e"
+        [class.is-odd]="o"
+        role="listitem"
+        [attr.aria-posinset]="i + 1" 
+        [attr.aria-setsize]="d.length"
+    ></app-comp>
+    <button role="button" aria-label="Bira random index od postoeckite indeksi i go brise vozacot na taa pozicija" (click)="Surprise()">Surprise</button>
+</div>
