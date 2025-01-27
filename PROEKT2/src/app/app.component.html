@@ -1,0 +1,48 @@
+<div
+  (keydown)="onKeydown($event)"
+  tabindex="0"
+  style="outline: none; position: relative; width: 600px; height: 400px; background: black; margin: auto; border: 2px solid white;"
+>
+  <!-- Ball -->
+  <div
+    [style.left.px]="ball.x"
+    [style.top.px]="ball.y"
+    [style.width.px]="ball.size"
+    [style.height.px]="ball.size"
+    style="position: absolute; background: white; border-radius: 50%;"
+  ></div>
+
+  <!-- Player Paddle -->
+  <div
+    [style.left.px]="playerPaddle.x"
+    [style.top.px]="playerPaddle.y"
+    [style.width.px]="playerPaddle.width"
+    [style.height.px]="playerPaddle.height"
+    style="position: absolute; background: blue;"
+  ></div>
+
+  <!-- Computer Paddle -->
+  <div
+    [style.left.px]="computerPaddle.x"
+    [style.top.px]="computerPaddle.y"
+    [style.width.px]="computerPaddle.width"
+    [style.height.px]="computerPaddle.height"
+    style="position: absolute; background: red;"
+  ></div>
+
+  <!-- Scores -->
+  <div style="position: absolute; top: 10px; left: 20px; color: white; font-size: 20px;">
+    Player: {{ playerScore }}
+  </div>
+  <div style="position: absolute; top: 10px; right: 20px; color: white; font-size: 20px;">
+    Computer: {{ computerScore }}
+  </div>
+
+  <!-- Game Over Message -->
+  <div
+    *ngIf="gameOver"
+    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: yellow; font-size: 24px; text-align: center;"
+  >
+    {{ winner }} Wins!
+  </div>
+</div>
