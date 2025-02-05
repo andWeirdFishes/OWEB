@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
       this.ball.vy*=(-1);
     }
 
-    // Ball collision with player paddle
+    // sudir so nasata palka
     if (
       this.ball.x <= this.playerPaddle.x + this.playerPaddle.width + 3 &&
       this.ball.y >= this.playerPaddle.y - 3 &&
@@ -89,7 +89,7 @@ export class AppComponent implements OnInit {
       this.ball.x+=2*this.ball.vx;
     }
 
-    // Ball out of bounds
+    // topkata e najlevo (poen za komp) ili najdesno (poen za nas)
     if (this.ball.x <= 0) {
       this.computerScore++;
       this.checkWin();
